@@ -2,7 +2,7 @@
 
 
 ### Contact Details
-Ramakant Debata
-ramakant.s.debata@gmail.com
-https://www.linkedin.com/in/ramakant-debata/
-+91-9923516767
+* Ramakant Debata
+* ramakant.s.debata@gmail.com
+* https://www.linkedin.com/in/ramakant-debata/
+* +91-9923516767
