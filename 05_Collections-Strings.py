@@ -61,3 +61,17 @@ print(message[::-1])
 print(message[::2]) # Even
 print(message[1::2]) # Odd
 print(message[:3:-1])
+
+s1 = "String"
+print("[", s1[4:2], "]", sep='')
+print("[", s1[4:2:-1], "]", sep='')
+print("[", s1[2:4:-1], "]", sep='')
+print("[", s1[2::-1], s1[:4:-1], "]", sep='')
+print("[", s1[2::-1], s1[-1:4:-1], "]", sep='')
+
+if s1.endswith("ing"):
+    print(True)
+
+if s1.startswith("Str"):
+    print(True)
+
