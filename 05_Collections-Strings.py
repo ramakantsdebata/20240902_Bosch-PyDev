@@ -75,3 +75,6 @@ if s1.endswith("ing"):
 if s1.startswith("Str"):
     print(True)
 
+print(s1)
+print(s1[-1])
+print(s1[len(s1) - 1])
