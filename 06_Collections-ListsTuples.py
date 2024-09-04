@@ -62,7 +62,7 @@ print(max(lst6))
 
 '''
 
-
+'''
 str1 = "Manish"
 str2 = str1
 print(id(str1), id(str2), sep='\n')
@@ -89,3 +89,44 @@ print(lst2)
 # print(lst2.index(2))
 print(lst2.pop(2))
 print(lst2)
+'''
+
+# Tuple - Immutable, Ordered, indexed, zero-based, sliceable, nestable, 
+
+lst1 = [1,2 ,3 , 4, 5]
+tp1 = (1, 2, 3, 4, 5)
+tp2 = (1, 2, lst1)
+
+print(tp1, tp2, sep='\n')
+
+a = 3
+a = 30
+
+# tp1[2] = 30; print(tp1)
+tp2[2].append(6); print(tp2)
+
+# tp3 = (10, 20, tp1)
+# tp1.append(7)
+# tp3[2].append(6); print(tp3)
+
+
+a = 1
+b = 2
+c = 3
+
+tp4 = (a, b, c)
+# tp4[1] = 20
+print(tp4)
+
+
+tp5 = tuple("Some string")
+tp6 = tuple(tp2)
+tp7 = tuple(lst1)
+tp8 = tuple([1, 2, 3, 4])
+
+print("#"*40)
+lst2 = [1]
+print(type(lst2), lst2)
+
+tp9 = (1,)
+print(type(tp9), tp9)
