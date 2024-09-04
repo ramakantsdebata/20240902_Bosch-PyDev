@@ -1,11 +1,13 @@
 # 20240902_Bosch-PyDev
 
 ### Links
+* [Git for Windows](https://gitforwindows.org/)
 * [PEP](https://peps.python.org/)
 * [Zen of Python](https://peps.python.org/pep-0020/)
 * [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
     * [Pep-8 Org](https://pep8.org/)
 * [Lexical Analysis](*https://docs.python.org/3/reference/lexical_analysis.html)
+    * [Format Specifiers](https://docs.python.org/3/library/string.html#format-specification-mini-language)
 * [Feedback](https://forms.gle/36ZyxYVbxXoaK1bMA)
 
 ### Contact Details
