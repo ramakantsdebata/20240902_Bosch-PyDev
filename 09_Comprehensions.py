@@ -22,4 +22,10 @@ for num in range(20):
     if num%2 == 0:
         even_numbers.append(num)
 
+lst = [num          for num in range(20)       if num%2 == 0];                print(type(lst), lst)
+tup = tuple(num     for num in range(20)       if num%2 == 0);           print(type(tup), tup)
+st =  {num          for num in range(20)       if num%2 == 0};                print(type(st), st)
+dt =  {num: num**2  for num in range(20)       if num%2 == 0};                print(type(dt), dt)
+gen = (num          for num in range(20)       if num%2 == 0);                print(type(gen), gen)
+
 print(even_numbers)
