@@ -1,4 +1,4 @@
-# Set - [Mutable] Collection of keys
+# Set - [Mutable] Collection of keys (Only Immutables can be keys as they are hash-able; Have to be unique)
 
 st1 = {1, 2, 3}
 print(st1)
@@ -96,5 +96,18 @@ lst2 = [1, 2, lst1]
 # st5 = {st1}    # ERROR
 
 tp1 = (1, 2)
-tp2 = (1, 2, tp1)
+tp2 = (1, 2, tp1)   # Success
 print(tp2)
+
+###############################################################################
+## Frozen Sets
+
+st1 = {1, 2, 3}
+fs1 = frozenset([1, 2, 3])
+
+print(st1, fs1, sep="\n")
+
+print(IsMutable(fs1))
+
+st2 = {'a', 'b', 'c', fs1}
+print(st2)
