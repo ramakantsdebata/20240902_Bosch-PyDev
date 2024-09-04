@@ -51,5 +51,6 @@ l1 = list(dt2)
 print(type(l1), l1)
 
 print(dt1)
+# Add a k-vpair to dt1 - ('a': 100)
 dt1.update(dt2)
-print(dt1)
+print(dt1)      # What haappens to the value of 'a', old value or new value ?
