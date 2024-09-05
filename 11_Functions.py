@@ -101,6 +101,7 @@ FileOpen("test.txt", "w", "utf-32", True)
 '''
 
 ###############################################################################
+'''
 ## Sequence Unpacking & Packing
 a = 1
 b = 2
@@ -130,7 +131,37 @@ def mul(a, b, *more_data):
     return prod
 
 print("\n", "*"*40)
-print(f"{mul(1, 2)=}")
+print(f"{mul(a=1, b=2)=}")
 print(f"{mul(1, 2, 3, 4)=}")
-print(f"{mul(1, 2, 3, 4, 5, 6, 7)=}")
+# print(f"{mul(a=1, b=2, 3, 4)=}")      # ERROR: KW args after Pos args
+print(f"{mul(1, 2, [3, 4, 5, 6, 7])=}")
 
+def mul2(*data):                        # Variable argument lists
+    print(f"{data=}, {type(data)=}")
+    prod = 1
+    for val in data:
+        prod *= val
+    return prod
+'''
+
+###############################################################################
+## Keyworded Variable argument lists
+
+def add(**data):
+    print(data, type(data))
+    sum = 0
+    for val in data.values():
+        sum += val
+    return sum
+
+print(add(a=1, b=2))
+
+
+def AddRecord(**kwData):
+    if len(kwData) == 3 and "roll" in kwData and "name" in kwData and "std" in kwData:
+        print(f"Name of the student is {kwData["name"]}")
+    else:
+        print("Data integrity compromised")
+
+AddRecord(roll=1, name="Vinay", std=5)
+AddRecord(name="Vinay", std=5)
