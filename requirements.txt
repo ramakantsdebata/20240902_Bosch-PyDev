@@ -1,0 +1,2 @@
+multipledispatch
+django==3.0.14

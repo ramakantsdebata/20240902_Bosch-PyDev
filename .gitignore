@@ -1,2 +1,5 @@
 ## Virtual environments
 **/.env-*
+
+## Temporary files/folders
+**/__pycache__
