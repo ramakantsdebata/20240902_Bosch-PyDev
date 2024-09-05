@@ -10,6 +10,12 @@
     * [Format Specifiers](https://docs.python.org/3/library/string.html#format-specification-mini-language)
 * [Feedback](https://forms.gle/36ZyxYVbxXoaK1bMA)
 
+### Snippets
+* Virtual environment
+    * Create - /c/Users/ramak/AppData/Local/Programs/Python/Python311/python -m venv .env-new
+    * Activate - source .env-new/Scripts/activate    {BASH specific}
+    * Deactivate - deactivate
+
 ### Contact Details
 * Ramakant Debata
 * ramakant.s.debata@gmail.com
