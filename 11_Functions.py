@@ -76,7 +76,7 @@ def add(a, b):
 print(add(1, 2))        # Positional args
 print(add(b=1, a=2))    # Named args
 '''
-
+'''
 def add(a, b=0, c=0):
     print(f"{a=}, {b=}, {c=}")
     sum = a + b + c
@@ -98,11 +98,39 @@ FileOpen("test.txt", encoding="utf-16")
 FileOpen("test.txt", mode="w", encoding="utf-32", bSharing=True)
 FileOpen("test.txt", "w", "utf-32", True)
 # FileOpen("test.txt", mode="w", encoding="utf-32", True)   # SyntaxError: positional argument follows keyword argument
+'''
 
-
+###############################################################################
+## Sequence Unpacking & Packing
 a = 1
 b = 2
 a, b = 1, 2
 
 lst1 = [1, 2]
 a, b = lst1     # Unpacking
+
+lst2 = [1, 2, 3, 4, 5, 6, 7]
+a, b, c, *others = lst2         # '*' is being used as a Packing operator, as it is on the LHS (recipient)
+
+print(f"{a=}, {b=}, {c=}, {others=}, {type(others)=}")
+
+
+def add(a, b, c=0, d=0):
+    return a + b
+
+print(f"{add(lst1[0], lst1[1])=}")
+print(f"{add(*lst1)=}")         # '*' is being used as an Unpacking operator, as it is used in the call (NOT the dfinition) i.e. sender
+
+# def mul(a, b, c=1, d=1):
+def mul(a, b, *more_data):
+    print(f"{a=}, {b=}, {more_data=}, {type(more_data)=}")
+    prod = a * b
+    for val in more_data:
+        prod *= val
+    return prod
+
+print("\n", "*"*40)
+print(f"{mul(1, 2)=}")
+print(f"{mul(1, 2, 3, 4)=}")
+print(f"{mul(1, 2, 3, 4, 5, 6, 7)=}")
+
