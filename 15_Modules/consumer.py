@@ -6,8 +6,27 @@ greetings.greetName("Rakesh")
 '''
 
 # from greetings import greet, greetName
-from greetings import *
-import greetings
+# from greetings import *
+# import greetings
 
-greet()
-greetings.prep_greeting
+# greet()
+# greetings.prep_greeting
+
+# greetings.greet()
+
+
+###############################################################################
+
+
+# from math.algebra import add, div
+# import math.algebra as al
+
+# al.add(1, 2)
+
+
+# print(add(1, 2))
+# print(div(14, 7))
+
+from mymath import *
+
+add(1, 2)
