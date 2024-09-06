@@ -27,6 +27,12 @@ greetings.greetName("Rakesh")
 # print(add(1, 2))
 # print(div(14, 7))
 
+# from mymath import *
+
+# print(add(1, 2))
+
 from mymath import *
 
-add(1, 2)
+print(add(1, 2))
+greet()
+# PrintLine("#")
