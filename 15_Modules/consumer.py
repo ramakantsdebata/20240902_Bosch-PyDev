@@ -41,3 +41,15 @@ print(add(1, 2))
 # helper()
 # greet()
 # PrintLine("#")
+
+import mymath.algebra
+
+print(algebra.add(2, 3))
+
+
+def Test1():
+    from mymath import add
+    print(add(1, 2))
+
+    # from mymath import *  # ERROR inside a local scope; Only possible in global 
+    
