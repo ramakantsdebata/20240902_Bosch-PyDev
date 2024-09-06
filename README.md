@@ -9,6 +9,7 @@
 * [Lexical Analysis](*https://docs.python.org/3/reference/lexical_analysis.html)
     * [Format Specifiers](https://docs.python.org/3/library/string.html#format-specification-mini-language)
 * [Exception hierarchy](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+* [Regular expressions, re module](https://docs.python.org/3/library/re.html)
 * [Feedback](https://forms.gle/36ZyxYVbxXoaK1bMA)
 
 ### Snippets
