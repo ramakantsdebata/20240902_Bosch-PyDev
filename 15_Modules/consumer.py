@@ -31,8 +31,13 @@ greetings.greetName("Rakesh")
 
 # print(add(1, 2))
 
+# from mymath.algebra.simultaneous import someMethod
 from mymath import *
+# from mymath.algebra import helper
+# from mymath.algebra import * 
+# from mymath.log import * 
 
 print(add(1, 2))
-greet()
+# helper()
+# greet()
 # PrintLine("#")
