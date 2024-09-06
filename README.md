@@ -8,6 +8,7 @@
     * [Pep-8 Org](https://pep8.org/)
 * [Lexical Analysis](*https://docs.python.org/3/reference/lexical_analysis.html)
     * [Format Specifiers](https://docs.python.org/3/library/string.html#format-specification-mini-language)
+* [Exception hierarchy](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 * [Feedback](https://forms.gle/36ZyxYVbxXoaK1bMA)
 
 ### Snippets
