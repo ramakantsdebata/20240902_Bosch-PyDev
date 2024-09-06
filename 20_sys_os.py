@@ -57,15 +57,18 @@ def os_trial():
         os.remove(newFile)
 
     # ?? - FileName length restrictions??
-'''
-    read()
-    read(n)       --> Safer
-    readline()
-    readlines()   --> list of lines; till the end of file
-    readlines(n)  --> Safer
-    write(data)
-    writeline()  -> Not available
-    writelines(coll_str)  
-'''
+    '''
+        read()
+        read(n)       --> Safer
+        readline()
+        readlines()   --> list of lines; till the end of file
+        readlines(n)  --> Safer
+        write(data)
+        writeline()  -> Not available
+        writelines(coll_str)  
+    '''
+    if os.path.exists(newFolder):
+        os.rmdir(newFolder)
+
 
 os_trial()
