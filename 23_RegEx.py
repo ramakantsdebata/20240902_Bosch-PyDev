@@ -45,6 +45,29 @@ res = re.fullmatch(r".{285}", string)
 print(type(res), res)
 
 
+# If the string has newlines in it, above will fail
+string2 = """The Euro STOXX 600 index, which tracks all stock markets across Europe 
+including the FTSE, fell by 11.48% - the worst day since it launched in 1998. 
+The panic selling prompted by the coronavirus has wiped £2.7tn off the value 
+of STOXX 600 shares since its all-time peak on 19 February."""
+
+print(len(string2))
+res = re.fullmatch(r".{288}", string2)  # Fails as the '.' cannot account for the newlines
+print(type(res), res)
+
+res = re.fullmatch(r".{288}", string2, re.S|re.I) # re.S = re.DOTALL
+print(type(res), res)
+
+# Flags - re.I (ignorecase), re.M (multiline), re.X (verbose)
+print("*"*40)
+res = re.search(r".+\s(.+ex).+(\d\d\s.+).", string)
+res = re.search(r'''.+\s     #Beginning of the string
+                (.+ex)       #Searching for index
+                .+           #Middle of the string
+                (\d\d\s.+).  #Date at the end''', string, re.X)
+print(res.groups())
+
+
 ## Split
 res = string.split(' ')
 print(len(res), res)
@@ -68,3 +91,19 @@ print(res)
 
 res = re.subn(r"[A-Z]{2,}", "*****", string)
 print(res)
+
+
+# groups
+
+# Metacharacters
+# * (zero or more times) 
+# + (one or more times)
+# ? (zero or one time)
+# Greedy vs. Non-greedy  (*?    +?    ??)
+
+# \ 1. Special sequences (\w \W \d \D \A (beg of string) \Z (end of string) ^ (beg of line) $ (end of line) \b \B \s \S)
+#   2. Escape \. \[ \] \( \)
+# 
+# Inside the [] for char set, the special meanings are removed implicitly.
+
+# Extension notations (non capturing groups, Named groups, +ve lookahead, -ve lookahead, +ve lookbehind, -ve lookbehind)

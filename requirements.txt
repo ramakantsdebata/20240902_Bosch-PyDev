@@ -1,2 +1,5 @@
 multipledispatch
 django==3.0.14
+parameterized
+pytest
+pytest-html

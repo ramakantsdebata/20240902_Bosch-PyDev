@@ -11,6 +11,7 @@
 * [Exception hierarchy](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 * [Regular expressions, re module](https://docs.python.org/3/library/re.html)
 * [Feedback](https://forms.gle/36ZyxYVbxXoaK1bMA)
+* [Pytest](https://docs.pytest.org/en/stable/how-to/unittest.html)
 
 ### Snippets
 * Virtual environment
