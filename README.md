@@ -15,7 +15,7 @@
 
 #### Operational
 * [Feedback](https://forms.gle/36ZyxYVbxXoaK1bMA)
-* [**Post-training Assessment**](https://forms.gle/Rg4ncXd3Zaz7UfAPA)
+* [**Post-training Assessment**](https://forms.gle/xfRKt38E1N4sWyYj7)
 
 ### Snippets
 * Virtual environment
