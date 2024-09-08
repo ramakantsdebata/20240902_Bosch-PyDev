@@ -1,6 +1,7 @@
 # 20240902_Bosch-PyDev
 
 ### Links
+#### Technical
 * [Git for Windows](https://gitforwindows.org/)
 * [PEP](https://peps.python.org/)
 * [Zen of Python](https://peps.python.org/pep-0020/)
@@ -10,8 +11,11 @@
     * [Format Specifiers](https://docs.python.org/3/library/string.html#format-specification-mini-language)
 * [Exception hierarchy](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 * [Regular expressions, re module](https://docs.python.org/3/library/re.html)
-* [Feedback](https://forms.gle/36ZyxYVbxXoaK1bMA)
 * [Pytest](https://docs.pytest.org/en/stable/how-to/unittest.html)
+
+#### Operational
+* [Feedback](https://forms.gle/36ZyxYVbxXoaK1bMA)
+* [**Post-training Assessment**](https://forms.gle/Rg4ncXd3Zaz7UfAPA)
 
 ### Snippets
 * Virtual environment
